@@ -13,7 +13,7 @@ int choice(int n)
 		rewind(stdin);
 	}
 	return n;
-}	 //проверка выбора
+}											 //проверка выбора
 int check(int x)
 {
 	while (scanf_s("%d", &x) != 1 || x > 100 || x < 1)
@@ -22,7 +22,7 @@ int check(int x)
 		rewind(stdin);
 	}
 	return x;
-}	//проверка на ввод
+}											//проверка на ввод
 int main()
 {
 	int arraySize = 1;
@@ -53,14 +53,14 @@ int main()
 		for (int i = 0; i < arraySize; i++)
 		{
 			array[i] = rand() % 200 - 100;
-			printf("%d ", array[i]);			//генерация рандомных элементов
+			printf("%d ", array[i]);					//генерация рандомных элементов
 		}
 	}
 	int array2[500];	
 	for (i = 0, d = 0; i < arraySize; i++, d++) 
 	{
 		array2[d] = array[i];
-		if ((i + 1) % 4 == 0)					//проверяем остаток от деления
+		if ((i + 1) % 4 == 0)							//проверяем остаток от деления
 		{
 			array2[d + 1] = array2[d + 2] = array2[d + 3] = array2[d + 4] = array2[d + 5] = 0;
 			d += 5;								//вставляем 5 нулей после каждого 4-того элемента  
