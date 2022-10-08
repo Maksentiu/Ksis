@@ -10,7 +10,7 @@ int choice(int n){
 		rewind(stdin);
 	}
 	return n;
-}	//проверка выбора
+}											//проверка выбора
 
 int check(int x)
 {
@@ -19,7 +19,7 @@ int check(int x)
 		rewind(stdin);
 	}
 	return x;
-}	//проверка на ввод
+}											//проверка на ввод
 
 void bubble(int* array, int arraySize) {
 	for (int j = 0; j < arraySize; j++) {
@@ -32,7 +32,7 @@ void bubble(int* array, int arraySize) {
 			}
 		}
 	}
-}	//функция перестановки элементов массива в порядке возростания
+}											//функция перестановки элементов массива в порядке возростания
 
 void fill_array(int arraySize, int* array) {
 	for (int i = 0; i < arraySize; i++)
@@ -40,7 +40,7 @@ void fill_array(int arraySize, int* array) {
 		array[i] = rand() % 200 - 100;
 		printf("%d ", array[i]);
 	}
-}	//функция заполнения массива рандомными элементами 
+}											//функция заполнения массива рандомными элементами 
 
 int main() {
 	int arraySize1 = 1, arraySize2 = 1, n = 0, i = 0;
@@ -73,7 +73,7 @@ int main() {
 		arraySize1 = check(arraySize1);
 		printf("\nInput size of the second array:\n");
 		arraySize2 = check(arraySize2);
-		srand(time(0));									//очистка ввода
+		srand(time(0));								//очистка ввода
 		printf("Generated arrays:\n");
 		printf("First array: ");
 		fill_array(arraySize1, array1);
@@ -97,7 +97,7 @@ int main() {
 
 	for (i2 = 0; i2 < arraySize2; i2++, i3++) {
 		array3[i3] = array2[i2];
-	}														//объединение двух массивов в третий
+	}										//объединение двух массивов в третий
 
 	bubble(array3, arraySize3);
 	for (i = 0; i < arraySize3; i++) printf("%d ", array3[i]);			//вывод элементов массива в порядке возростания
