@@ -89,7 +89,6 @@ int main() {
 
 	printf("\nSorted third array: ");
 	int arraySize3 = arraySize1 + arraySize2;
-	int min = 0, max = 0;
 
 	int i1 = 0, i2 = 0, i3 = 0;
 	for (i1 = 0; i1 < arraySize1; i1++, i3++) {
