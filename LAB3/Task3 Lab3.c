@@ -44,7 +44,6 @@ void fill_array(int arraySize, int* array) {
 
 int main() {
 	int arraySize1 = 1, arraySize2 = 1, n = 0, i = 0;
-	int array1[100], array2[100], array3[300] ;
 	n = choice(n);
 
 	if (n == 1)
@@ -53,7 +52,6 @@ int main() {
 		arraySize1 = check(arraySize1);
 		printf("\nInput size of the second array:\n");
 		arraySize2 = check(arraySize2);
-		int arraySize3 = arraySize1 + arraySize2;
 		printf("Input elements of the first array: ");
 		for (i = 0; i < arraySize1; i++)
 			while (scanf_s("%d", &array1[i]) < 1) {
