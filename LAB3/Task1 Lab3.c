@@ -47,7 +47,7 @@ int main()
 		printf("Input elements of thre array:\n");
 
 		for (int i = 0; i < arraySize; i++) 
-			while (scanf_s("%d", &array[i]) < 1) 
+			while (scanf_s("%d", &array[i]) != 1) 
 			{
 				printf("Try again =)");
 				rewind(stdin);
