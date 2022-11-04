@@ -1,0 +1,5 @@
+﻿  Source.c
+  Task3 Lab4.c
+C:\Users\maksim\OneDrive\Рабочий стол\LABS\LAB 4\Task3 Lab4.c\Task3 Lab4.c\Task3 Lab4.c(25,15): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  Task3 Lab4.c.vcxproj -> C:\Users\maksim\OneDrive\Рабочий стол\LABS\LAB 4\Task3 Lab4.c\x64\Debug\Task3 Lab4.c.exe
